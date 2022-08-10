@@ -34,6 +34,12 @@
       </div>
       <button mat-flat-button color="primary" type="submit" [disabled]="!loginForm.valid">Login</button>
     </form>
+    <div *ngIf="showError" class="showError">
+      {{errorMessage}}
+    </div>
+    <div *ngIf="showSuccess" class="showSuccess">
+      {{successMessage}}
+    </div>
 
     <div class="button-row">
       <p>Create New Account</p>
