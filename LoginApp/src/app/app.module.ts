@@ -36,6 +36,7 @@ import { AuthService } from './auth.service';
 
   ],
   providers: [AuthService],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
